@@ -1,22 +1,29 @@
 .header {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #111;
-  height: 60px;
+  height: 65px;
   display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-logo {
   margin-left: 50px;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100px;
   object-fit: contain;
   cursor: pointer;
 }
 
 .header-search {
+  margin-left: 30px;
   margin-right: 20px;
-  margin-top: 15px;
+  margin-top: 10px;
   display: flex;
   flex: 1;
 }
@@ -31,13 +38,11 @@
 
 .header-searchIcon {
   border-radius: 0 5px 5px 0;
-  position: relative;
-  height: px;
   background-color: orange;
 }
 
 .header-nav {
-  margin-top: 15px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -45,6 +50,12 @@
 .header-link {
   text-decoration: none;
   color: white;
+  padding: 5px;
+}
+
+.header-link:hover {
+  border: 1px solid white;
+  border-radius: 3px;
 }
 
 .header-option {
@@ -56,11 +67,30 @@
 
 .option-lineOne {
   font-weight: 500;
-  font-size: 10px;
+  font-size: 12px;
   color: rgb(192, 181, 181);
 }
 
 .option-lineTwo {
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 700;
+}
+
+.option-checkout {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+.option-cart {
+  display: flex;
+}
+
+.cart-text {
+  position: absolute;
+  right: 20px;
+  bottom: 11px;
+  font-weight: 700;
 }
