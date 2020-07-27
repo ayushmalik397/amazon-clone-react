@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import { Link, useHistory } from "react-router-dom";
-import { register } from "../serviceWorker";
 import { auth } from "../firebase.js";
 
 function Login() {
@@ -37,6 +36,7 @@ function Login() {
         <img
           className="login-logo"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1920px-Amazon_logo.svg.png"
+          alt="logo"
         />
       </Link>
       <div className="login-container">

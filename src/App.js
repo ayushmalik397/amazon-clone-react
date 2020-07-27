@@ -9,7 +9,7 @@ import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 
 function App() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -27,8 +27,6 @@ function App() {
         //log out
       }
     });
-
-    console.log("USER is",user)
 
     return () => {
       unsubscribe();

@@ -8,11 +8,10 @@ function CheckoutProduct(product) {
     dispatch({
       type: "REMOVE_FROM_BASKET",
       payload: {
-        id: product.id
+        id: product.id,
       },
     });
   };
-  console.log(product);
   return (
     <div className="checkout-product">
       <img className="prod-image" src={product.image} alt="product" />

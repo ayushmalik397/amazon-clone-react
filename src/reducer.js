@@ -1,5 +1,3 @@
-import Subtotal from "./components/Subtotal";
-
 export const initialState = {
   basket: [],
   user: null,
@@ -14,11 +12,10 @@ function reducer(state, action) {
       return {
         ...state,
         user: action.user,
-      }
+      };
     case "ADD_TO_BASKET":
       //add logic
       return { ...state, basket: [...state.basket, action.payload] };
-      break;
     case "REMOVE_FROM_BASKET":
       //remove logic
       let newBasket = [...state.basket];
@@ -31,7 +28,6 @@ function reducer(state, action) {
         console.warn("Cant remove Product");
       }
       return { ...state, basket: newBasket };
-      break;
     default:
       return state;
   }
