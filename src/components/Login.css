@@ -1,0 +1,80 @@
+.login-logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100px;
+  object-fit: contain;
+  text-align: center;
+}
+
+.login {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container {
+  width: 300px;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+.login-container > h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.login-container > form > h5 {
+  margin-bottom: 5px;
+}
+
+.login-container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.login-btn {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  height: 30px;
+  height: 30px;
+  width: 98%;
+  border-radius: 5px;
+}
+
+.new-account {
+  width: 340px;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.create-btn {
+  height: 30px;
+  margin-top: 20px;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.over-text {
+  background-color: white;
+  margin: 0 auto;
+  top: 9px;
+  width: 140px;
+  position: relative;
+  z-index: 1;
+}

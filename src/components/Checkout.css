@@ -2,9 +2,18 @@
   width: 100%;
   margin-bottom: 20px;
   margin-top: 20px;
-  margin-left: 20px;
 }
 
-.checout {
+.checkout {
+    display: flex;
     background-color: white;
+}
+
+.checkout-box {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.checkout-head {
+    margin-bottom: 10px;
 }

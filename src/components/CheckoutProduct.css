@@ -1,0 +1,32 @@
+.checkout-product {
+  display: flex;
+  margin-top: 20px;
+}
+
+.prod-image {
+  width: 180px;
+  height: 180px;
+  flex: 20%;
+  object-fit: contain;
+}
+
+.prod-details {
+  margin: 10px;
+  flex: 80%;
+}
+
+.prod-title {
+  font-weight: 900;
+}
+
+.prod-rating {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.remove-btn {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+}
