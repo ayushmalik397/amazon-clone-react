@@ -31,7 +31,9 @@ function Header() {
       <div className="header-nav">
         <Link to={!user && "/login"} className="header-link">
           <div onClick={logint} className="header-option">
-            <span className="option-lineOne">Hello {user?.email}</span>
+            <span className="option-lineOne">
+              Hello {!user ? "Guest" : user.email}
+            </span>
             <span className="option-lineTwo">
               {user ? "Sign Out" : "Sign In"}
             </span>

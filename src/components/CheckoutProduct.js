@@ -13,7 +13,7 @@ function CheckoutProduct(product) {
     });
   };
   return (
-    <div className="checkout-product">
+    <div className="checkout-product" key={product.id}>
       <img className="prod-image" src={product.image} alt="product" />
       <div className="prod-details">
         <p className="prod-title">{product.title}</p>
